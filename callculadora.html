@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculadora.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="Visor" class="Visor" onclick="blur()" disabled>
+        </div>
+        <section class="numpad">    
+            <div id="n1" onclick="adicionarAoVisor(1)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            1
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>  
+            <div id="n2" onclick="adicionarAoVisor(2)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            2
+                        </h1>
+                    </main>
+                </fieldset>
+            </div> 
+            <div id="n3" onclick="adicionarAoVisor(3)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            3
+                        </h1>
+                    </main>
+                </fieldset>
+            </div> 
+            <div id="n4" onclick="adicionarAoVisor(4)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            4
+                        </h1>
+                    </main>
+                </fieldset>
+            </div> 
+            <div id="n5" onclick="adicionarAoVisor(5)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            5
+                        </h1>
+                    </main>
+                </fieldset>
+            </div> 
+            <div id="n6" onclick="adicionarAoVisor(6)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            6
+                        </h1>
+                    </main>
+                </fieldset>
+            </div> 
+            <div id="n7" onclick="adicionarAoVisor(7)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            7
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="n8" onclick="adicionarAoVisor(8)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            8
+                        </h1>
+                    </main>
+                </fieldset>
+            </div> 
+            <div id="n9" onclick="adicionarAoVisor(9)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            9
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="n0" onclick="adicionarAoVisor(0)" class="nums">
+                <fieldset >
+                    <main>
+                        <h1>
+                            0
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+        </section> 
+        <section class="operacoes">
+            <div id="+" onclick="adicionandoOperacao('+')" class="ops">
+                <fieldset >
+                    <main>
+                        <h1>
+                            +
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="-" onclick="adicionandoOperacao('-')" class="ops">
+                <fieldset >
+                    <main>
+                        <h1>
+                            -
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="/" onclick="adicionandoOperacao('/')" class="ops">
+                <fieldset >
+                    <main>
+                        <h1>
+                            ÷
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="*" onclick="adicionandoOperacao('*')" class="ops">
+                <fieldset >
+                    <main>
+                        <h1>
+                            X
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="Limpa" onclick="limpa()" class="ops">
+                <fieldset >
+                    <main>
+                        <h1>
+                            CE
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+            <div id="=" onclick="resolvendoConta()" class="ops">
+                <fieldset >
+                    <main>
+                        <h1>
+                            =
+                        </h1>
+                    </main>
+                </fieldset>
+            </div>
+        </section>
+        <script src="calculadora.js"></script>
+    </body>
+</html>
