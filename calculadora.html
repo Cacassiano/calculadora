@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculadora.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <main>
+            <div id="container-visor">    
+                <input type="text"  id="Visor" class="Visor" onclick="blur()" disabled>
+            </div>
+            <div class="container">    
+                <section class="numpad">    
+                    <div class="nums">
+                        <fieldset id="n1" onclick="adicionarAoVisor(1)">
+                            <h1>1</h1>
+                        </fieldset>
+                    </div>  
+                    <div class="nums">
+                        <fieldset id="n2" onclick="adicionarAoVisor(2)" >
+                            <h1>2</h1>
+                        </fieldset>
+                    </div> 
+                    <div id="n3" class="nums">
+                        <fieldset onclick="adicionarAoVisor(3)" >
+                            <h1>3</h1>
+                        </fieldset>
+                    </div> 
+                    <div class="nums">
+                        <fieldset id="n4" onclick="adicionarAoVisor(4)">
+                            <h1>4</h1>
+                        </fieldset>
+                    </div> 
+                    <div class="nums">
+                        <fieldset id="n5" onclick="adicionarAoVisor(5)" >
+                            <h1>5</h1>
+                        </fieldset>
+                    </div> 
+                    <div class="nums">
+                        <fieldset  id="n6" onclick="adicionarAoVisor(6)">
+                            <h1>6</h1>
+                        </fieldset>
+                    </div> 
+                    <div class="nums">
+                        <fieldset id="n7" onclick="adicionarAoVisor(7)">
+                            <h1>7</h1>
+                        </fieldset>
+                    </div>
+                    <div class="nums">
+                        <fieldset id="n8" onclick="adicionarAoVisor(8)">
+                            <h1>8</h1>
+                        </fieldset>
+                    </div> 
+                    <div class="nums">
+                        <fieldset id="n9" onclick="adicionarAoVisor(9)" >
+                            <h1>9</h1>
+                        </fieldset>
+                    </div>
+                    <div class="nums">
+                        <fieldset id="n0" onclick="adicionarAoVisor(0)" >
+                            <h1>0</h1>
+                        </fieldset>
+                    </div>
+                </section> 
+                <section class="operacoes">
+                    <div class="ops">
+                        <fieldset id="+" onclick="adicionandoOperacao('+')">
+                            <h1>+</h1>
+                        </fieldset>
+                    </div>
+                    <div class="ops">
+                        <fieldset id="-" onclick="adicionandoOperacao('-')">
+                            <h1>-</h1>
+                        </fieldset>
+                    </div>
+                    <div class="ops">
+                        <fieldset id="/" onclick="adicionandoOperacao('/')">
+                            <h1>÷</h1>
+                        </fieldset>
+                    </div>
+                    <div class="ops">
+                        <fieldset id="*" onclick="adicionandoOperacao('*')">
+                            <h1>X</h1>
+                        </fieldset>
+                    </div>
+                    <div class="ops">
+                        <fieldset id="Limpa" onclick="limpa()">
+                                <h1>C</h1>
+                        </fieldset>
+                    </div>
+                    <div class="ops">
+                        <fieldset id="=" onclick="resolvendoConta()">
+                            <h1>=</h1>
+                        </fieldset>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="calculadora.js"></script>
+    </body>
+</html>
